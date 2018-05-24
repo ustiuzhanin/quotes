@@ -13,6 +13,8 @@ html {
 
 body {
   background-color: #ab3b3b;
+
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .main {
@@ -27,7 +29,7 @@ body {
   padding: 35px 50px;
 
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .quote__btn {
@@ -36,11 +38,15 @@ body {
   padding: 10px;
   margin-bottom: 15px;
 
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff2f2;
+  text-transform: uppercase;
+  cursor: pointer;
 
   border: none;
   background-color: #f77f7f;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .quote__wrapper {
@@ -49,10 +55,15 @@ body {
 }
 
 .quote__text {
+  margin-bottom: 5px;
+  
   font-size: 18px;
+  color: #1d1919;
 }
 
 .quote__author {
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-style: italic;
   text-align: right;
@@ -64,12 +75,33 @@ body {
 }
 
 .social__twitter {
-  display: block;
-  padding: 10px;
+  position: relative;
 
+  display: block;
+  padding: 3px 8px 4px 24px;
+
+  font-size: 11px;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
 
-  background-color: blue;
+  background-color: #1b95e0;
+  border-radius: 3px;
+}
+
+.social__twitter::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 6px;
+
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  background-image: url(http://www.macdrifter.com/theme/images/twitter-snow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
